@@ -1,4 +1,4 @@
-# 功能介绍
+## 功能介绍
 
 01. **快进**：按「右方向键」快进 10 秒。
 02. **倍速播放**：按「.」键加速，按「,」键减速，按「/」键重置播放速度。
@@ -14,7 +14,7 @@
 12. **缩放画面**：按「=」键放大画面，按「-」键缩小画面，按「0」键重置画面大小。
 
 
-# 脚本安装
+## 脚本安装
 
 请把脚本文件放进 Plex 和 Plex HTPC 的用户「scripts」文件夹内，然后重启 Plex 和 Plex HTPC 客户端即可。
 
@@ -29,13 +29,13 @@ C:\Users\你的用户名\AppData\Local\Plex\scripts
 C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 ```
 
-# 脚本使用
+## 脚本使用
 
 除了「recordingBeta-keybinds.lua」这个脚本仅支持 MacOS 以外，其余脚本均支持 Plex for Windows/Mac/Linux 和 Plex HTPC for Windows/Mac/Linux，安装脚本后请务必重启客户端再使用，若脚本无法正常工作，可能是因为脚本设置的快捷键与你操作系统上的其他快捷键有冲突，你可以尝试使用文本编辑/记事本打开脚本修改快捷键。
 
-#
+　
 
-# Function Introduction
+## Function Introduction
 
 01. **Fast forward**: Press "right arrow key" to fast forward 10 seconds.
 02. **Multiply speed playback**: Press "." key to speed up, press "," to slow down, press "/" to reset the playback speed.
@@ -51,7 +51,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 12. **Zoom screen**: Press "=" to zoom in, press "-" to zoom out, press "0" to reset the screen size.
 
 
-# Script Installation
+## Script Installation
 
 Please put the script file into the user "scripts" folder of Plex and Plex HTPC, and then restart the Plex and Plex HTPC clients.
 
@@ -66,6 +66,6 @@ C:\Users\Username\AppData\Local\Plex\scripts
 C:\Users\Username\AppData\Local\Plex HTPC\scripts
 ```
 
-# Script Usage
+## Script Usage
 
 Except "recordingBeta-keybinds.lua" which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
