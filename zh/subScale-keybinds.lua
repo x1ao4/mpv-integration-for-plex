@@ -1,0 +1,17 @@
+mp.add_key_binding("z", "zoom_in", function()
+    mp.commandv("add", "sub-scale", 0.1)
+    local sub_scale = mp.get_property("sub-scale")
+    mp.osd_message(string.format("字幕大小: %.1f", sub_scale))
+end, {repeatable=true})
+
+mp.add_key_binding("x", "zoom_out", function()
+    mp.commandv("add", "sub-scale", -0.1)
+    local sub_scale = mp.get_property("sub-scale")
+    mp.osd_message(string.format("字幕大小: %.1f", sub_scale))
+end, {repeatable=true})
+
+mp.add_key_binding("c", "reset_zoom", function()
+    mp.set_property("sub-scale", 1)
+    local sub_scale = mp.get_property("sub-scale")
+    mp.osd_message(string.format("字幕大小: %.1f", sub_scale))
+end)

@@ -1,0 +1,34 @@
+Function Introduction
+
+01. Fast forward: Press "right arrow key" to fast forward 10 seconds.
+02. Multiply speed playback: Press "." key to speed up, press "," to slow down, press "/" to reset the playback speed.
+03. Frame-by-frame playback: press "'" to go forward frame-by-frame, press ";" to go backward frame-by-frame.
+04. Mute: Press "j" to switch the mute mode, press again to unmute and restore the original volume.
+05. Screenshot: Press "s" to capture the current screen.
+06. Record screen: Press "1" to start recording, press "2" to stop recording. (Only support MacOS)
+07. Switch subtitles: Press "t" to cycle through the subtitles.
+08. Adjust subtitle position: Press "d" to move down the subtitle, press "e" to move up the subtitle, press "r" to reset the subtitle position.
+09. Adjust subtitle size: press "z" to enlarge the subtitle, press "x" to reduce the subtitle, press "c" to reset the subtitle size.
+10. Adjust subtitle offset: Press "v" to decrease the subtitle delay, press "b" to increase the subtitle delay, press "n" to reset the subtitle offset.
+11. Move screen: Press "m" to activate the move mode, use "arrow keys" to move the screen, press "m" again to close the move mode. Press "o" to reset the screen position.
+12. Zoom screen: Press "=" to zoom in, press "-" to zoom out, press "0" to reset the screen size.
+
+
+Script Installation
+
+Please put the script file into the user "scripts" folder of Plex and Plex HTPC, and then restart the Plex and Plex HTPC clients.
+
+MacOS users can refer to the following directory, please move the script files to the "scripts" folder, then use TextEdit to open "screenshot-keybinds.lua" to set the path to save the screenshot and save it; then use TextEdit to open "recordingBeta-keybinds.lua", replace the "/ Applications/FFmpeg/FFmpeg" in the script with the path of your FFmpeg executable (you need to install FFmpeg first), and set the directory to save the recording, then save the file.
+
+/Users/Username/Library/Application Support/Plex/scripts
+/Users/Username/Library/Application Support/Plex HTPC/scripts
+
+Windows users can refer to the following directory, please move the script files to the "scripts" folder, then open "screenshot-keybinds.lua" with Notepad to set the screenshot save path and save it; delete "recordingBeta-keybinds.lua" (this script does not support Windows).
+
+C:\Users\Username\AppData\Local\Plex\scripts
+C:\Users\Username\AppData\Local\Plex HTPC\scripts
+
+
+Script Usage
+
+Except "recordingBeta-keybinds.lua" which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
