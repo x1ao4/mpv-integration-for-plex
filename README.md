@@ -55,7 +55,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 
 Please put the script file into the user `scripts` folder of Plex and Plex HTPC, and then restart the Plex and Plex HTPC clients.
 
-MacOS users can refer to the following directory, please move the script files to the `scripts` folder, then use TextEdit to open `screenshot-keybinds.lua` to set the path to save the screenshot and save it; then use TextEdit to open `recordingBeta-keybinds.lua`, replace the `/ Applications/FFmpeg/FFmpeg` in the script with the path of your FFmpeg executable (you need to install FFmpeg first), and set the directory to save the recording, then save the file.
+MacOS users can refer to the following directory, please move the script files to the `scripts` folder, then use TextEdit to open `screenshot-keybinds.lua` to set the path to save the screenshot and save it; then use TextEdit to open `recordingBeta-keybinds.lua`, replace the `/Applications/FFmpeg/FFmpeg` in the script with the path of your FFmpeg executable (you need to install FFmpeg first), and set the directory to save the recording, then save the file.
 ```
 /Users/Username/Library/Application Support/Plex/scripts
 /Users/Username/Library/Application Support/Plex HTPC/scripts
