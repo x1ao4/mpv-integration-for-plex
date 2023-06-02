@@ -5,7 +5,7 @@
 03. **逐帧播放**：按`’`键向前逐帧，按`;`键向后逐帧。
 04. **静音**：按`j`键切换静音模式，再次按下解除静音并恢复原音量。
 05. **截图**：按`s`键截取当前画面。
-06. **录制屏幕**：按`1`键开始录制，按`2`键停止录制。（仅支持 MacOS）
+06. **录制屏幕（测试）**：按`1`键开始录制，按`2`键停止录制。（仅支持 MacOS）
 07. **切换字幕**：按`t`键循环切换字幕。
 08. **调整字幕位置**：按`d`键向下移动字幕，按`e`键向上移动字幕，按`r`键重置字幕位置。
 09. **调整字幕大小**：按`z`键放大字幕，按`x`键缩小字幕，按`c`键重置字幕大小。
@@ -28,10 +28,18 @@ Windows 用户可参考以下目录，请将脚本文件移至`scripts`文件夹
 C:\Users\你的用户名\AppData\Local\Plex\scripts
 C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 ```
-
 ## 脚本使用
 
 除了`recordingBeta-keybinds.lua`这个脚本仅支持 MacOS 以外，其余脚本均支持 Plex for Windows/Mac/Linux 和 Plex HTPC for Windows/Mac/Linux，安装脚本后请务必重启客户端再使用，若脚本无法正常工作，可能是因为脚本设置的快捷键与你操作系统上的其他快捷键有冲突，你可以尝试使用文本编辑/记事本打开脚本修改快捷键。
+
+
+## 已知问题
+
+- **录制屏幕（测试）**：录制画面可能存在不流畅、卡顿问题，不支持音频录制。
+- **切换字幕**：Plex 界面中的字幕选项不会发生变化，字幕切换仅在画面中生效，且仅对当次播放有效。
+- **调整字幕位置**：此设置对整个客户端生效，直到下次重启客户端为止，字幕位置会应用到所有字幕上。
+- **调整字幕大小**：此设置对整个客户端生效，直到下次重启客户端为止，字幕大小会应用到所有字幕上。
+- **调整字幕偏移**：字幕偏移仅对当次播放有效。
 
 　
 
@@ -42,7 +50,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 03. **Frame-by-frame playback**: press `'` to go forward frame-by-frame, press `;` to go backward frame-by-frame.
 04. **Mute**: Press `j` to switch the mute mode, press again to unmute and restore the original volume.
 05. **Screenshot**: Press `s` to capture the current screen.
-06. **Record screen**: Press `1` to start recording, press `2` to stop recording. (Only support MacOS)
+06. **Record screen (Beta)**: Press `1` to start recording, press `2` to stop recording. (Only support MacOS)
 07. **Switch subtitles**: Press `t` to cycle through the subtitles.
 08. **Adjust subtitle position**: Press `d` to move down the subtitle, press `e` to move up the subtitle, press `r` to reset the subtitle position.
 09. **Adjust subtitle size**: press `z` to enlarge the subtitle, press `x` to reduce the subtitle, press `c` to reset the subtitle size.
@@ -65,7 +73,15 @@ Windows users can refer to the following directory, please move the script files
 C:\Users\Username\AppData\Local\Plex\scripts
 C:\Users\Username\AppData\Local\Plex HTPC\scripts
 ```
-
 ## Script Usage
 
 Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
+
+
+## Known Issues
+
+- **Record screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
+- **Switch subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback.
+- **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
+- **Adjust subtitle size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
+- **Adjust subtitle offset**: Subtitle offset is only valid for the current playback.
