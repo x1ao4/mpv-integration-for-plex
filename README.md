@@ -94,4 +94,4 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 
 ## Thanks
 
-Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration, the scripts `stepping-keybinds.lua`, `zoom-keybinds.lua` and `subPosition-keybinds.lua` were obtained by modifying the code in [this article](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1) by OttoKerner. Thank you.
+Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration, the scripts `stepping-keybinds.lua`, `zoom-keybinds.lua` and `subPosition-keybinds.lua` were obtained by modifying the code in OttoKerner’s [article](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1). Thank you.
