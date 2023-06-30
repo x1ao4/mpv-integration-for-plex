@@ -41,6 +41,11 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 - **调整字幕大小**：此设置对整个客户端生效，直到下次重启客户端为止，字幕大小会应用到所有字幕上。
 - **调整字幕偏移**：字幕偏移仅对当次播放有效。
 
+
+## 感谢
+
+感谢 [OttoKerner](https://forums.plex.tv/u/OttoKerner) 的启发，脚本`stepping-keybinds.lua`、`zoom-keybinds.lua`和`subPosition-keybinds.lua`是复制了 OttoKerner [这篇文章](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1)中的代码进行修改得到的，感谢。
+
 　
 
 ## Function Introduction
@@ -85,3 +90,8 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 - **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
 - **Adjust subtitle size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
 - **Adjust subtitle offset**: Subtitle offset is only valid for the current playback.
+
+
+## Thanks
+
+Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration, the scripts `stepping-keybinds.lua`, `zoom-keybinds.lua` and `subPosition-keybinds.lua` were obtained by modifying the code in [this article](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1) by OttoKerner. Thank you.
