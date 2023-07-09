@@ -1,3 +1,7 @@
+# plex-mpv
+Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能可以通过操作界面或快捷键在 Plex 中使用，还有一部分功能在 Plex 中没有操作界面，也没有相应的快捷键，但是我们通过脚本可以为这些隐藏功能自定义快捷键，这样就可以在 Plex 中正常使用这些功能了。
+
+
 ## 功能介绍
 
 01. **快进**：按`右方向键`快进 10 秒。
@@ -47,6 +51,10 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 感谢 [OttoKerner](https://forums.plex.tv/u/OttoKerner) 的启发，脚本`stepping-keybinds.lua`、`zoom-keybinds.lua`和`subPosition-keybinds.lua`是复制了 OttoKerner [这篇文章](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1)中的代码进行修改得到的，感谢。
 
 　
+
+# plex-mpv
+The player used by Plex desktop client is mpv player, some features of mpv player can be applied in Plex through the interface or shortcut keys, while some features do not have an interface or corresponding shortcuts in Plex. However, we can customize shortcut keys for these hidden features through scripts, so that we can use these features properly in Plex.
+
 
 ## Function Introduction
 
