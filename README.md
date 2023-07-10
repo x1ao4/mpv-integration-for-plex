@@ -56,7 +56,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 The player used by Plex desktop client is mpv player, some features of mpv player can be applied in Plex through the interface or shortcut keys, while some features do not have an interface or corresponding shortcuts in Plex. However, we can customize shortcut keys for these hidden features through scripts, so that we can use these features properly in Plex.
 
 
-## Function Introduction
+## Features
 
 01. **Fast forward**: Press `right arrow key` to fast forward 10 seconds.
 02. **Multiply speed playback**: Press `.` key to speed up, press `,` to slow down, press `/` to reset the playback speed.
@@ -72,7 +72,7 @@ The player used by Plex desktop client is mpv player, some features of mpv playe
 12. **Zoom screen**: Press `=` to zoom in, press `-` to zoom out, press `0` to reset the screen size.
 
 
-## Script Installation
+## Installation
 
 Please put the script file into the user `scripts` folder of Plex and Plex HTPC, and then restart the Plex and Plex HTPC clients.
 
@@ -86,7 +86,7 @@ Windows users can refer to the following directory, please move the script files
 C:\Users\Username\AppData\Local\Plex\scripts
 C:\Users\Username\AppData\Local\Plex HTPC\scripts
 ```
-## Script Usage
+## Usage
 
 Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
 
