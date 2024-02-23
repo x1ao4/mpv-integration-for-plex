@@ -7,11 +7,13 @@ function move_toggle()
         mp.add_forced_key_binding("UP", "move_down", move_down, {repeatable=true})
         mp.add_forced_key_binding("LEFT", "move_left", move_left, {repeatable=true})
         mp.add_forced_key_binding("RIGHT", "move_right", move_right, {repeatable=true})
+        mp.osd_message("Move Mode: ON")
     else
         mp.remove_key_binding("move_up")
         mp.remove_key_binding("move_down")
         mp.remove_key_binding("move_left")
         mp.remove_key_binding("move_right")
+        mp.osd_message("Move Mode: OFF")
     end
 end
 
