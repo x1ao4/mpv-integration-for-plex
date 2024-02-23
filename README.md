@@ -96,7 +96,7 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 ## Known Issues
 
 - **Fast forward**: The shortcut key for fast forward, `right arrow key`, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `f` or any other shortcut key you prefer.
-- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it is disabled. You can also enable it by editing the `speed-keybinds.lua` script and setting `local global_speed = true`). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
+- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it's turned off, but you can also set `local global_speed = true` in the `speed-keybinds.lua` script to turn it on by default). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
 - **Record screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
 - **Switch subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback.
 - **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
