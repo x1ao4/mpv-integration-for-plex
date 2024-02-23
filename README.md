@@ -5,7 +5,7 @@ Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能
 ## 功能介绍
 
 01. **快进**：按 `右方向键` 快进 10 秒。
-02. **倍速播放**：按 `.` 键加速，按 `,` 键减速，按 `/` 键重置播放速度。
+02. **倍速播放**：按 `.` 键加速，按 `,` 键减速，按 `/` 键重置播放速度，按 `g` 键可开启或关闭全局播放速度模式。
 03. **逐帧播放**：按 `’` 键向前逐帧，按 `;` 键向后逐帧。
 04. **静音**：按 `j` 键切换静音模式，再次按下解除静音并恢复原音量。
 05. **截图**：按 `s` 键截取当前画面。
@@ -39,6 +39,8 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 
 ## 已知问题
 
+- **快进**：快进功能的 `右方向键` 快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipForward-keybinds.lua` 脚本，将 `RIGHT` 改为 `f` 或其他快捷键即可正常使用。
+- **倍速播放**：倍速播放可通过 `g` 键开启或关闭全局播放速度模式（默认关闭），在全局播放速度模式下，你设置的播放速度将对整个客户端生效，直到下次重启客户端为止，你也可以随时关闭该模式。
 - **录制屏幕（测试）**：录制画面可能存在不流畅、卡顿问题，不支持音频录制。
 - **切换字幕**：Plex 界面中的字幕选项不会发生变化，字幕切换仅在画面中生效，且仅对当次播放有效。
 - **调整字幕位置**：此设置对整个客户端生效，直到下次重启客户端为止，字幕位置会应用到所有字幕上。
@@ -59,7 +61,7 @@ The player used by Plex desktop client is mpv player, some features of mpv playe
 ## Features
 
 01. **Fast forward**: Press `right arrow key` to fast forward 10 seconds.
-02. **Multiply speed playback**: Press `.` key to speed up, press `,` to slow down, press `/` to reset the playback speed.
+02. **Multiply speed playback**: Press `.` to speed up, press `,` to slow down, press `/` to reset the playback speed, press `g` to turn the global playback speed mode on or off.
 03. **Frame-by-frame playback**: press `'` to go forward frame-by-frame, press `;` to go backward frame-by-frame.
 04. **Mute**: Press `j` to switch the mute mode, press again to unmute and restore the original volume.
 05. **Screenshot**: Press `s` to capture the current screen.
@@ -93,6 +95,8 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 
 ## Known Issues
 
+- **Fast forward**: The shortcut key for fast forward, `right arrow key`, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `f` or any other shortcut key you prefer.
+- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (default is off). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
 - **Record screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
 - **Switch subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback.
 - **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
