@@ -40,7 +40,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 ## 已知问题
 
 - **快进**：快进功能的 `右方向键` 快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipForward-keybinds.lua` 脚本，将 `RIGHT` 改为 `f` 或其他快捷键即可正常使用。
-- **倍速播放**：倍速播放可通过 `g` 键开启或关闭全局播放速度模式（默认关闭），在全局播放速度模式下，你设置的播放速度将对整个客户端生效，直到下次重启客户端为止，你也可以随时关闭该模式。
+- **倍速播放**：倍速播放可通过 `g` 键开启或关闭全局播放速度模式（默认关闭，你也可以通过编辑 `speed-keybinds.lua` 脚本，设置 `local global_speed = true` 改为默认启用），在全局播放速度模式下，你设置的播放速度将对整个客户端生效，直到下次重启客户端为止，你也可以随时关闭该模式。
 - **录制屏幕（测试）**：录制画面可能存在不流畅、卡顿问题，不支持音频录制。
 - **切换字幕**：Plex 界面中的字幕选项不会发生变化，字幕切换仅在画面中生效，且仅对当次播放有效。
 - **调整字幕位置**：此设置对整个客户端生效，直到下次重启客户端为止，字幕位置会应用到所有字幕上。
@@ -96,7 +96,7 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 ## Known Issues
 
 - **Fast forward**: The shortcut key for fast forward, `right arrow key`, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `f` or any other shortcut key you prefer.
-- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (default is off). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
+- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it is disabled. You can also enable it by editing the `speed-keybinds.lua` script and setting `local global_speed = true`). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
 - **Record screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
 - **Switch subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback.
 - **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
