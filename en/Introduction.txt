@@ -1,7 +1,7 @@
 Function Introduction
 
 01. Fast forward: Press "right arrow key" to fast forward 10 seconds.
-02. Multiply speed playback: Press "." key to speed up, press "," to slow down, press "/" to reset the playback speed.
+02. Multiply speed playback: Press "." to speed up, press "," to slow down, press "/" to reset the playback speed, press "g" to turn the global playback speed mode on or off.
 03. Frame-by-frame playback: press "'" to go forward frame-by-frame, press ";" to go backward frame-by-frame.
 04. Mute: Press "j" to switch the mute mode, press again to unmute and restore the original volume.
 05. Screenshot: Press "s" to capture the current screen.
@@ -32,3 +32,5 @@ C:\Users\Username\AppData\Local\Plex HTPC\scripts
 Script Usage
 
 Except "recordingBeta-keybinds.lua" which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
+
+The shortcut key for fast forward, "right arrow key", might conflict with other operations on your HTPC. To resolve this, open the "skipForward-keybinds.lua" of the HTPC with a TextEdit/Notepad, and change "RIGHT" to "f" or any other shortcut key you prefer.
