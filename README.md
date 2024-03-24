@@ -46,6 +46,7 @@ C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
 - **调整字幕位置**：此设置对整个客户端生效，直到下次重启客户端为止，字幕位置会应用到所有字幕上。
 - **调整字幕大小**：此设置对整个客户端生效，直到下次重启客户端为止，字幕大小会应用到所有字幕上。
 - **调整字幕偏移**：字幕偏移仅对当次播放有效。
+- **搜索**：有部分音频文件的 `video-codec` 会被识别为 `mjpeg` 或 `png`，在播放这类音频文件时，所有脚本中的自定义快捷键都会生效，这将导致你无法使用这些快捷键在搜索栏输入字符，此时你需要停止当前播放的音乐，才能在搜索栏正常使用所有按键输入字符。如果你认为这对你造成了影响，可以选择修改快捷键，使用一些不常用的按键作为快捷键，这样可以降低对搜索功能的影响。
 
 
 ## 感谢
@@ -102,6 +103,7 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 - **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
 - **Adjust subtitle size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
 - **Adjust subtitle offset**: Subtitle offset is only valid for the current playback.
+- **Search**: Some audio files have their `video-codec` recognized as `mjpeg` or `png`. When playing such audio files, all custom shortcuts in scripts will be active. This prevents you from using these shortcuts to input characters in the search bar. To resolve this, you'll need to stop the current music playback to use all keys for character input in the search bar. If you find this inconvenient, consider modifying the shortcuts to use less common keys, reducing their impact on the search functionality.
 
 
 ## Thanks
