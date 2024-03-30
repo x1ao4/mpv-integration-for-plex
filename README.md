@@ -24,13 +24,13 @@ Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能
 
 MacOS 用户可参考以下目录，请将脚本文件移至 `scripts` 文件夹，然后使用文本编辑打开 `screenshot-keybinds.lua` 设置截图保存路径并保存；再使用文本编辑打开 `recordingBeta-keybinds.lua`，将脚本中的 `/Applications/FFmpeg/FFmpeg` 替换为你的 FFmpeg 可执行文件的路径（需要先安装 FFmpeg），并设置保存视频的目录，然后保存文件即可。
 ```
-/Users/你的用户名/Library/Application Support/Plex/scripts
-/Users/你的用户名/Library/Application Support/Plex HTPC/scripts
+/Users/用户名/Library/Application Support/Plex/scripts
+/Users/用户名/Library/Application Support/Plex HTPC/scripts
 ```
 Windows 用户可参考以下目录，请将脚本文件移至 `scripts` 文件夹，然后使用记事本打开 `screenshot-keybinds.lua` 设置截图保存路径并保存；可以删除 `recordingBeta-keybinds.lua` 这个脚本（此脚本不支持 Windows）。
 ```
-C:\Users\你的用户名\AppData\Local\Plex\scripts
-C:\Users\你的用户名\AppData\Local\Plex HTPC\scripts
+D:\Users\用户名\AppData\Local\Plex\scripts
+D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 ```
 ## 脚本使用
 
@@ -86,8 +86,8 @@ MacOS users can refer to the following directory, please move the script files t
 ```
 Windows users can refer to the following directory, please move the script files to the `scripts` folder, then open `screenshot-keybinds.lua` with Notepad to set the screenshot save path and save it; delete `recordingBeta-keybinds.lua` (this script does not support Windows).
 ```
-C:\Users\Username\AppData\Local\Plex\scripts
-C:\Users\Username\AppData\Local\Plex HTPC\scripts
+D:\Users\Username\AppData\Local\Plex\scripts
+D:\Users\Username\AppData\Local\Plex HTPC\scripts
 ```
 ## Usage
 
