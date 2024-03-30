@@ -2,7 +2,7 @@
 local filename = "output.mp4"
 
 -- 设置保存视频的目录
-local directory = "/Users/User/Downloads/"
+local directory = "/Users/用户名/Downloads/"
 
 -- 设置 FFmpeg 进程的 PID
 local pid = nil
