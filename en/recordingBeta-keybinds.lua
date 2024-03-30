@@ -2,7 +2,7 @@
 local filename = "output.mp4"
 
 -- Set the directory to save the recording
-local directory = "/Users/User/Downloads/"
+local directory = "/Users/Username/Downloads/"
 
 -- Set the PID of the FFmpeg process
 local pid = nil
