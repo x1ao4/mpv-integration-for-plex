@@ -23,8 +23,8 @@ function cycle_subtitles()
     -- 遍历字幕信息，找到当前选中的字幕
     for _, track in pairs(sub_info) do
         if track["type"] == "sub" and track["selected"] then
-            -- 如果字幕信息中不存在"title"或者codec为eia_608，则跳过
-            if not track["title"] or track["codec"] == "eia_608" then
+            -- 如果字幕的codec为eia_608，则跳过
+            if track["codec"] == "eia_608" then
                 return cycle_subtitles()
             else
                 -- 获取 ff-index 的值
@@ -37,7 +37,11 @@ function cycle_subtitles()
                     local id = string.match(subtitle, "\"id\":\"(.-)\"")
                     local title, display
                     if show_title then
-                        title = string.match(subtitle, "\"title\":\"(.-)\"")
+                        if not track["title"] then
+                            display = string.match(subtitle, "\"displayTitle\":\"(.-)\"")
+                        else
+                            title = track["title"]
+                        end
                     else
                         display = string.match(subtitle, "\"displayTitle\":\"(.-)\"")
                     end
@@ -47,11 +51,25 @@ function cycle_subtitles()
                         displayTitle = title or display
                         break
                     end
+                end
 
-                    -- 如果 ff-index 为 0，那么就使用字幕的 title 中的数字去匹配元数据中的 "id"，然后再反推 "displayTitle"
-                    if ff_index == 0 and id and (title or display) and id == string.match(track["title"], "(%d+)") then
+                -- 如果 displayTitle 仍然为 "无"，那么就使用字幕的 title 中的数字去匹配元数据中的 "id"，然后再反推 "displayTitle"
+                if displayTitle == "无" then
+                    -- 将元数据字符串分割成多个部分，每个部分代表一个字幕
+                    for subtitle in string.gmatch(media, "{(.-)}") do
+                        local id = string.match(subtitle, "\"id\":\"(.-)\"")
+                        local title, display
+                        if show_title then
+                            if string.find(track["title"], "?") then
+                                display = string.match(subtitle, "\"displayTitle\":\"(.-)\"")
+                            else
+                                title = track["title"]
+                            end
+                        else
+                            display = string.match(subtitle, "\"displayTitle\":\"(.-)\"")
+                        end
                         -- 先满足 id 匹配再获取 displayTitle
-                        if id == string.match(track["title"], "(%d+)") then
+                        if id and (title or display) and id == string.match(track["title"], "(%d+)") then
                             displayTitle = title or display
                             break
                         end
