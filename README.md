@@ -10,12 +10,13 @@ Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能
 04. **静音**：按 `j` 键切换静音模式，再次按下解除静音并恢复原音量。
 05. **截图**：按 `s` 键截取当前画面。
 06. **录制屏幕（测试）**：按 `1` 键开始录制，按 `2` 键停止录制。（仅支持 MacOS）
-07. **切换字幕**：按 `t` 键循环切换字幕。
+07. **切换字幕**：按 `t` 键循环切换字幕，按 `5` 键可切换显示内置字幕标题或显示 Plex 字幕标题。
 08. **调整字幕位置**：按 `d` 键向下移动字幕，按 `e` 键向上移动字幕，按 `r` 键重置字幕位置。
 09. **调整字幕大小**：按 `z` 键放大字幕，按 `x` 键缩小字幕，按 `c` 键重置字幕大小。
 10. **调整字幕偏移**：按 `v` 键减少字幕延迟，按 `b` 键增加字幕延迟，按 `n` 键重置字幕偏移。
 11. **移动画面**：按 `m` 键激活移动模式，使用 `方向键` 移动画面，再次按 `m` 键可关闭移动模式；按 `o` 键可重置画面位置。
 12. **缩放画面**：按 `=` 键放大画面，按 `-` 键缩小画面，按 `0` 键重置画面大小。
+13. **切换音轨**：按 `y` 键循环切换音轨，按 `6` 键可切换显示内置音轨标题或显示 Plex 音轨标题。
 
 
 ## 脚本安装
@@ -47,6 +48,7 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 - **调整字幕大小**：此设置对整个客户端生效，直到下次重启客户端为止，字幕大小会应用到所有字幕上。
 - **调整字幕偏移**：字幕偏移仅对当次播放有效。
 - **搜索**：有部分音频文件的 `video-codec` 会被识别为 `mjpeg` 或 `png`，在播放这类音频文件时，所有脚本中的自定义快捷键都会生效，这将导致你无法使用这些快捷键在搜索栏输入字符，此时你需要停止当前播放的音乐，才能在搜索栏正常使用所有按键输入字符。如果你认为这对你造成了影响，可以选择修改快捷键，使用一些不常用的按键作为快捷键，这样可以降低对搜索功能的影响。
+- **切换音轨**：Plex 界面中的音轨选项不会发生变化，音轨切换仅在音频输出中生效，且仅对当次播放有效。
 
 
 ## 感谢
@@ -67,12 +69,13 @@ The player used by Plex desktop client is mpv player, some features of mpv playe
 04. **Mute**: Press `j` to switch the mute mode, press again to unmute and restore the original volume.
 05. **Screenshot**: Press `s` to capture the current screen.
 06. **Record screen (Beta)**: Press `1` to start recording, press `2` to stop recording. (Only support MacOS)
-07. **Switch subtitles**: Press `t` to cycle through the subtitles.
+07. **Switch subtitles**: Press `t` to cycle through the subtitles, press `5` to toggle between displaying Embedded Subtitle Titles and Plex Display Titles.
 08. **Adjust subtitle position**: Press `d` to move down the subtitle, press `e` to move up the subtitle, press `r` to reset the subtitle position.
 09. **Adjust subtitle size**: press `z` to enlarge the subtitle, press `x` to reduce the subtitle, press `c` to reset the subtitle size.
 10. **Adjust subtitle offset**: Press `v` to decrease the subtitle delay, press `b` to increase the subtitle delay, press `n` to reset the subtitle offset.
 11. **Move screen**: Press `m` to activate the move mode, use `arrow keys` to move the screen, press `m` again to close the move mode. Press `o` to reset the screen position.
 12. **Zoom screen**: Press `=` to zoom in, press `-` to zoom out, press `0` to reset the screen size.
+13. **Switch audio tracks**：Press `y` to cycle through the audio tracks, press `6` to toggle between displaying Embedded Audio Track Titles and Plex Display Titles.
 
 
 ## Installation
@@ -104,6 +107,7 @@ Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts
 - **Adjust subtitle size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
 - **Adjust subtitle offset**: Subtitle offset is only valid for the current playback.
 - **Search**: Some audio files have their `video-codec` recognized as `mjpeg` or `png`. When playing such audio files, all custom shortcuts in scripts will be active. This prevents you from using these shortcuts to input characters in the search bar. To resolve this, you'll need to stop the current music playback to use all keys for character input in the search bar. If you find this inconvenient, consider modifying the shortcuts to use less common keys, reducing their impact on the search functionality.
+- **Switch audio tracks**: The audio track option in the Plex interface will not change. Audio track switching only takes effect on the audio output and is only valid for the current playback.
 
 
 ## Thanks
