@@ -4,14 +4,14 @@ function round(num, numDecimalPlaces)
 end
 
 function zoomAdd()
-    mp.command("add video-zoom +0.25")
+    mp.command("add video-zoom +0.05")
     zoom_level = mp.get_property("video-zoom")
     zoom_level = round(zoom_level, 2)
     mp.osd_message("Zoom: "..zoom_level, 0.5)
 end
 
 function zoomSub()
-    mp.command("add video-zoom -0.25")
+    mp.command("add video-zoom -0.05")
     zoom_level = mp.get_property("video-zoom")
     zoom_level = round(zoom_level, 2)
     mp.osd_message("Zoom: "..zoom_level, 0.5)
