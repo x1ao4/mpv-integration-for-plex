@@ -60,7 +60,7 @@ mp.add_key_binding("s", "screenshot", function()
         return
     end
 
-    local path = "/Users/User/Downloads/" -- 设置截图保存路径，例如 /Users/用户名/Downloads/ 或 D:\Users\用户名\Downloads\
+    local path = "/Users/User/Downloads/" -- 设置截图保存路径，例如 /Users/用户名/Downloads/ 或 D:\\Users\\用户名\\Downloads\\
     local time_pos = mp.get_property_number("time-pos")
     local seconds = math.floor(time_pos % 60)
     local minutes = math.floor((time_pos / 60) % 60)
