@@ -60,7 +60,7 @@ mp.add_key_binding("s", "screenshot", function()
         return
     end
 
-    local path = "/Users/User/Downloads/" -- Set the screenshot save path, for example, /Users/Username/Downloads/ or D:\Users\Username\Downloads\
+    local path = "/Users/User/Downloads/" -- Set the screenshot save path, for example, /Users/Username/Downloads/ or D:\\Users\\Username\\Downloads\\
     local time_pos = mp.get_property_number("time-pos")
     local seconds = math.floor(time_pos % 60)
     local minutes = math.floor((time_pos / 60) % 60)
