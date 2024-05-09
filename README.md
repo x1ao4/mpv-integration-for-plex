@@ -4,19 +4,20 @@ Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能
 
 ## 功能介绍
 
-01. **快进**：按 `右` 键快进 10 秒。
-02. **倍速播放**：按 `.` 键加速，按 `,` 键减速，按 `/` 键重置播放速度，按 `g` 键可开启或关闭全局播放速度模式。
-03. **逐帧播放**：按 `’` 键向前逐帧，按 `;` 键向后逐帧。
-04. **静音**：按 `j` 键切换静音模式，再次按下解除静音并恢复原音量。
-05. **截图**：按 `s` 键截取当前画面。
-06. **录制屏幕（测试）**：按 `1` 键开始录制，按 `2` 键停止录制。（仅支持 MacOS）
-07. **切换字幕**：按 `t` 键循环切换字幕，按 `5` 键可切换显示内置字幕标题或显示 Plex 字幕标题。
-08. **调整字幕位置**：按 `d` 键向下移动字幕，按 `e` 键向上移动字幕，按 `r` 键重置字幕位置。
-09. **调整字幕大小**：按 `z` 键放大字幕，按 `x` 键缩小字幕，按 `c` 键重置字幕大小。
-10. **调整字幕偏移**：按 `v` 键减少字幕延迟，按 `b` 键增加字幕延迟，按 `n` 键重置字幕偏移。
-11. **移动画面**：按 `m` 键激活移动模式，使用 `方向键` 移动画面，再次按 `m` 键可关闭移动模式；按 `o` 键可重置画面位置。
-12. **缩放画面**：按 `=` 键放大画面，按 `-` 键缩小画面，按 `0` 键重置画面大小。
-13. **切换音轨**：按 `y` 键循环切换音轨，按 `6` 键可切换显示内置音轨标题或显示 Plex 音轨标题。
+01. **快进**：按 `右` 键快进 10 秒（支持自定义快进时长）。
+02. **快退**：按 `左` 键快退 10 秒（支持自定义快退时长）。
+03. **倍速播放**：按 `.` 键加速，按 `,` 键减速，按 `/` 键重置播放速度，按 `g` 键可开启或关闭全局播放速度模式。
+04. **逐帧播放**：按 `’` 键向前逐帧，按 `;` 键向后逐帧。
+05. **静音**：按 `j` 键切换静音模式，再次按下解除静音并恢复原音量。
+06. **截图**：按 `s` 键截取当前画面。
+07. **录制屏幕（测试）**：按 `1` 键开始录制，按 `2` 键停止录制。（仅支持 MacOS）
+08. **切换字幕**：按 `t` 键循环切换字幕，按 `5` 键可切换显示内置字幕标题或显示 Plex 字幕标题。
+09. **调整字幕位置**：按 `d` 键向下移动字幕，按 `e` 键向上移动字幕，按 `r` 键重置字幕位置。
+10. **调整字幕大小**：按 `z` 键放大字幕，按 `x` 键缩小字幕，按 `c` 键重置字幕大小。
+11. **调整字幕偏移**：按 `v` 键减少字幕延迟，按 `b` 键增加字幕延迟，按 `n` 键重置字幕偏移。
+12. **移动画面**：按 `m` 键激活移动模式，使用 `方向键` 移动画面，再次按 `m` 键可关闭移动模式；按 `o` 键可重置画面位置。
+13. **缩放画面**：按 `=` 键放大画面，按 `-` 键缩小画面，按 `0` 键重置画面大小。
+14. **切换音轨**：按 `y` 键循环切换音轨，按 `6` 键可切换显示内置音轨标题或显示 Plex 音轨标题。
 
 
 ## 脚本安装
@@ -37,10 +38,13 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 
 除了 `recordingBeta-keybinds.lua` 这个脚本仅支持 MacOS 以外，其余脚本均支持 Plex for Windows/Mac/Linux 和 Plex HTPC for Windows/Mac/Linux，安装脚本后请务必重启客户端再使用，若脚本无法正常工作，可能是因为脚本设置的快捷键与你操作系统上的其他快捷键有冲突，你可以尝试使用文本编辑/记事本打开脚本修改快捷键。
 
+如需自定义**快进**或**快退**的时长，请用文本编辑/记事本打开 `skipForward-keybinds.lua` 或 `skipBackward-keybinds.lua` 脚本，将 `seek 10` 或 `seek -10` 中的 `10` 修改为你期望的秒数并保存即可。
+
 
 ## 已知问题
 
-- **快进**：快进功能的 `右` 键快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipForward-keybinds.lua` 脚本，将 `RIGHT` 改为 `f` 或其他快捷键即可正常使用。
+- **快进**：快进功能的 `右` 键快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipForward-keybinds.lua` 脚本，将 `RIGHT` 改为 `q` 或其他快捷键即可正常使用。
+- **快退**：快退功能的 `左` 键快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipBackward-keybinds.lua` 脚本，将 `LEFT` 改为 `h` 或其他快捷键即可正常使用。
 - **倍速播放**：你可以通过 `g` 键开启或关闭全局播放速度模式（默认关闭，你也可以通过编辑 `speed-keybinds.lua` 脚本，设置 `local global_speed = true` 改为默认启用），在全局播放速度模式下，你设置的播放速度将对整个客户端生效，直到下次重启客户端为止，你也可以随时关闭该模式。
 - **录制屏幕（测试）**：录制画面可能存在不流畅、卡顿问题，不支持音频录制。
 - **切换字幕**：Plex 界面中的字幕选项不会发生变化，字幕切换仅在画面中生效，且仅对当次播放有效。默认显示 Plex 字幕标题，你也可以通过编辑 `cycleSub-keybinds.lua` 脚本，设置 `local show_title = true` 改为默认显示内置字幕标题（若当前字幕没有内置字幕标题则会退回 Plex 字幕标题）。
@@ -63,19 +67,20 @@ The player used by Plex desktop client is mpv player, some features of mpv playe
 
 ## Features
 
-01. **Fast forward**: Press `right arrow key` to fast forward 10 seconds.
-02. **Multiply speed playback**: Press `.` to speed up, press `,` to slow down, press `/` to reset the playback speed, press `g` to turn the global playback speed mode on or off.
-03. **Frame-by-frame playback**: press `'` to go forward frame-by-frame, press `;` to go backward frame-by-frame.
-04. **Mute**: Press `j` to switch the mute mode, press again to unmute and restore the original volume.
-05. **Screenshot**: Press `s` to capture the current screen.
-06. **Record screen (Beta)**: Press `1` to start recording, press `2` to stop recording. (Only support MacOS)
-07. **Switch subtitles**: Press `t` to cycle through the subtitles, press `5` to toggle between displaying Embedded Subtitle Titles and Plex Display Titles.
-08. **Adjust subtitle position**: Press `d` to move down the subtitle, press `e` to move up the subtitle, press `r` to reset the subtitle position.
-09. **Adjust subtitle size**: press `z` to enlarge the subtitle, press `x` to reduce the subtitle, press `c` to reset the subtitle size.
-10. **Adjust subtitle offset**: Press `v` to decrease the subtitle delay, press `b` to increase the subtitle delay, press `n` to reset the subtitle offset.
-11. **Move screen**: Press `m` to activate the move mode, use `arrow keys` to move the screen, press `m` again to close the move mode. Press `o` to reset the screen position.
-12. **Zoom screen**: Press `=` to zoom in, press `-` to zoom out, press `0` to reset the screen size.
-13. **Switch audio tracks**：Press `y` to cycle through the audio tracks, press `6` to toggle between displaying Embedded Audio Track Titles and Plex Display Titles.
+01. **Fast Forward**: Press `right` to fast forward 10 seconds (customizable fast forward duration supported).
+02. **Rewind**: Press `left` to rewind 10 seconds (customizable rewind duration supported).
+03. **Multiply Speed Playback**: Press `.` to speed up, press `,` to slow down, press `/` to reset the playback speed, press `g` to turn the global playback speed mode on or off.
+04. **Frame-by-frame Playback**: press `'` to go forward frame-by-frame, press `;` to go backward frame-by-frame.
+05. **Mute**: Press `j` to switch the mute mode, press again to unmute and restore the original volume.
+06. **Screenshot**: Press `s` to capture the current screen.
+07. **Record Screen (Beta)**: Press `1` to start recording, press `2` to stop recording. (Only support MacOS)
+08. **Switch Subtitles**: Press `t` to cycle through the subtitles, press `5` to toggle between displaying Embedded Subtitle Titles and Plex Display Titles.
+09. **Adjust Subtitle Position**: Press `d` to move down the subtitle, press `e` to move up the subtitle, press `r` to reset the subtitle position.
+10. **Adjust Subtitle Size**: press `z` to enlarge the subtitle, press `x` to reduce the subtitle, press `c` to reset the subtitle size.
+11. **Adjust Subtitle Offset**: Press `v` to decrease the subtitle delay, press `b` to increase the subtitle delay, press `n` to reset the subtitle offset.
+12. **Move Screen**: Press `m` to activate the move mode, use `arrow keys` to move the screen, press `m` again to close the move mode. Press `o` to reset the screen position.
+13. **Zoom Screen**: Press `=` to zoom in, press `-` to zoom out, press `0` to reset the screen size.
+14. **Switch Audio Tracks**：Press `y` to cycle through the audio tracks, press `6` to toggle between displaying Embedded Audio Track Titles and Plex Display Titles.
 
 
 ## Installation
@@ -96,19 +101,22 @@ D:\Users\Username\AppData\Local\Plex HTPC\scripts
 
 Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
 
+To customize the duration of **Fast Forward** or **Rewind**, open the `skipForward-keybinds.lua` or `skipBackward-keybinds.lua` script with a TextEdit/Notepad, and change the `10` in `seek 10` or `seek -10` to your desired number of seconds. Then, save the file.
+
 
 ## Known Issues
 
-- **Fast forward**: The shortcut key for fast forward, `right arrow key`, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `f` or any other shortcut key you prefer.
-- **Multiply speed playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it's turned off, but you can also set `local global_speed = true` in the `speed-keybinds.lua` script to turn it on by default). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
-- **Record screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
-- **Switch subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback. By default, Plex Display Titles are shown. You can also customize this by editing the `cycleSub-keybinds.lua` script, setting `local show_title = true` to default to displaying embedded subtitle titles 
+- **Fast Forward**: The shortcut key for fast forward, `right` key, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `q` or any other shortcut key you prefer.
+- **Rewind**: The shortcut key for Rewind, `left` key, might conflict with other operations on your HTPC. To resolve this, open the `skipBackward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `LEFT` to `h` or any other shortcut key you prefer.
+- **Multiply Speed Playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it's turned off, but you can also set `local global_speed = true` in the `speed-keybinds.lua` script to turn it on by default). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
+- **Record Screen (Beta)**: The recording might have issues with smoothness and stuttering, and does not support audio recording.
+- **Switch Subtitles**: The subtitle option in the Plex interface will not change. Subtitle switching only takes effect on the screen and is only valid for the current playback. By default, Plex Display Titles are shown. You can also customize this by editing the `cycleSub-keybinds.lua` script, setting `local show_title = true` to default to displaying embedded subtitle titles 
 (If the current subtitle lacks an embedded subtitle title, it will fallback to Plex Display Title).
-- **Adjust subtitle position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
-- **Adjust subtitle size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
-- **Adjust subtitle offset**: Subtitle offset is only valid for the current playback.
-- **Switch audio tracks**: The audio track option in the Plex interface will not change. Audio track switching only takes effect on the audio output and is only valid for the current playback. By default, Plex Display Titles are shown. You can also customize this by editing the `cycleAudio-keybinds.lua` script, setting `local show_title = true` to default to displaying embedded audio track titles (If the current audio track lacks an embedded audio track title, it will fallback to Plex Display Title).
-- **Keyboard input**: For some audio files, the `video-codec` may be identified as `mjpeg` or `png`. When playing these audio files, all custom shortcuts in the script will take effect globally in Plex. This prevents you from using these keys to input characters within the user interface (the keys trigger corresponding functions). To resolve this, you need to stop the currently playing music to enable normal use of all keys for character input. If you find this affecting you, you can choose to modify the shortcuts by using less commonly used keys (such as changing the shortcut to uppercase letters or special symbols, triggering functions through `Shift` key combinations). This can mitigate the adverse effects of the script.
+- **Adjust Subtitle Position**: This setting applies to the entire client until the next time the client is restarted. The subtitle position will be applied to all subtitles.
+- **Adjust Subtitle Size**: This setting applies to the entire client until the next time the client is restarted. The subtitle size will be applied to all subtitles.
+- **Adjust Subtitle Offset**: Subtitle offset is only valid for the current playback.
+- **Switch Audio Tracks**: The audio track option in the Plex interface will not change. Audio track switching only takes effect on the audio output and is only valid for the current playback. By default, Plex Display Titles are shown. You can also customize this by editing the `cycleAudio-keybinds.lua` script, setting `local show_title = true` to default to displaying embedded audio track titles (If the current audio track lacks an embedded audio track title, it will fallback to Plex Display Title).
+- **Keyboard Input**: For some audio files, the `video-codec` may be identified as `mjpeg` or `png`. When playing these audio files, all custom shortcuts in the script will take effect globally in Plex. This prevents you from using these keys to input characters within the user interface (the keys trigger corresponding functions). To resolve this, you need to stop the currently playing music to enable normal use of all keys for character input. If you find this affecting you, you can choose to modify the shortcuts by using less commonly used keys (such as changing the shortcut to uppercase letters or special symbols, triggering functions through `Shift` key combinations). This can mitigate the adverse effects of the script.
 
 
 ## Thanks
