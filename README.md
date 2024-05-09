@@ -38,7 +38,7 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 
 除了 `recordingBeta-keybinds.lua` 这个脚本仅支持 MacOS 以外，其余脚本均支持 Plex for Windows/Mac/Linux 和 Plex HTPC for Windows/Mac/Linux，安装脚本后请务必重启客户端再使用，若脚本无法正常工作，可能是因为脚本设置的快捷键与你操作系统上的其他快捷键有冲突，你可以尝试使用文本编辑/记事本打开脚本修改快捷键。
 
-如需自定义**快进**或**快退**的时长，请用文本编辑/记事本打开 `skipForward-keybinds.lua` 或 `skipBackward-keybinds.lua` 脚本，将 `seek 10` 或 `seek -10` 中的 `10` 修改为你期望的秒数并保存即可。
+如需自定义**快进**或**快退**的时长，请用文本编辑/记事本打开 `skipForward-keybinds.lua` 或 `skipBackward-keybinds.lua` 脚本，将 `seek 10` 或 `seek -10` 中的 `10` 修改为你期望的秒数并保存即可（重启后生效）。
 
 
 ## 已知问题
@@ -101,7 +101,7 @@ D:\Users\Username\AppData\Local\Plex HTPC\scripts
 
 Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
 
-To customize the duration of **Fast Forward** or **Rewind**, open the `skipForward-keybinds.lua` or `skipBackward-keybinds.lua` script with a TextEdit/Notepad, and change the `10` in `seek 10` or `seek -10` to your desired number of seconds. Then, save the file.
+To customize the duration of **Fast Forward** or **Rewind**, open the `skipForward-keybinds.lua` or `skipBackward-keybinds.lua` script with a TextEdit/Notepad, and change the `10` in `seek 10` or `seek -10` to your desired number of seconds. Then, save the file (Changes will take effect after restarting).
 
 
 ## Known Issues
