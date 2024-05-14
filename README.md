@@ -53,7 +53,7 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 ## 赞赏
 如果你觉得这个项目对你有用，可以请我喝杯咖啡。如果你喜欢这个项目，可以给我一个⭐️。谢谢你的支持！
 
-<img width="255" alt="赞赏" src="https://github.com/x1ao4/plex-localization-zh/assets/112841659/ced37486-9961-480e-8cb4-b34ca1b2eb5d">
+<img width="399" alt="赞赏" src="https://github.com/x1ao4/plex-mpv/assets/112841659/2eed25d0-d98f-4ffd-962e-aefec171b458">
 <br>
 <br>
 <br>
@@ -114,4 +114,4 @@ Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration,
 ## Support
 If you found this helpful, consider buying me a coffee or giving it a ⭐️. Thanks for your support!
 
-<img width="255" alt="赞赏" src="https://github.com/x1ao4/plex-localization-zh/assets/112841659/ced37486-9961-480e-8cb4-b34ca1b2eb5d">
+<img width="399" alt="赞赏" src="https://github.com/x1ao4/plex-mpv/assets/112841659/2eed25d0-d98f-4ffd-962e-aefec171b458">
