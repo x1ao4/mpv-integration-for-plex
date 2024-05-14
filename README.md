@@ -1,9 +1,7 @@
 # plex-mpv
 Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能可以通过操作界面或快捷键在 Plex 中使用，还有一部分功能在 Plex 中没有操作界面，也没有相应的快捷键，但是我们通过脚本可以为这些隐藏功能自定义快捷键，这样就可以在 Plex 中正常使用这些功能了。
 
-
 ## 功能介绍
-
 01. **快进**：按 `右` 键快进 10 秒（支持自定义快进时长）。
 02. **快退**：按 `左` 键快退 10 秒（支持自定义快退时长）。
 03. **倍速播放**：按 `.` 键加速，按 `,` 键减速，按 `/` 键重置播放速度，按 `g` 键可开启或关闭全局播放速度模式。
@@ -19,9 +17,7 @@ Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能
 13. **缩放画面**：按 `=` 键放大画面，按 `-` 键缩小画面，按 `0` 键重置画面大小。
 14. **切换音轨**：按 `y` 键循环切换音轨，按 `6` 键可切换显示内置音轨标题或显示 Plex 音轨标题。
 
-
 ## 脚本安装
-
 请把脚本文件放进 Plex 和 Plex HTPC 的用户 `scripts` 文件夹内，然后重启 Plex 和 Plex HTPC 客户端即可。
 
 MacOS 用户可参考以下目录，请将脚本文件移至 `scripts` 文件夹，然后使用文本编辑打开 `screenshot-keybinds.lua` 设置截图保存路径并保存；再使用文本编辑打开 `recordingBeta-keybinds.lua`，将脚本中的 `/Applications/FFmpeg/FFmpeg` 替换为你的 FFmpeg 可执行文件的路径（需要先安装 FFmpeg），并设置保存视频的目录，然后保存文件即可。
@@ -35,14 +31,11 @@ D:\Users\用户名\AppData\Local\Plex\scripts
 D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 ```
 ## 脚本使用
-
 除了 `recordingBeta-keybinds.lua` 这个脚本仅支持 MacOS 以外，其余脚本均支持 Plex for Windows/Mac/Linux 和 Plex HTPC for Windows/Mac/Linux，安装脚本后请务必重启客户端再使用，若脚本无法正常工作，可能是因为脚本设置的快捷键与你操作系统上的其他快捷键有冲突，你可以尝试使用文本编辑/记事本打开脚本修改快捷键。
 
 如需自定义**快进**或**快退**的时长，请用文本编辑/记事本打开 `skipForward-keybinds.lua` 或 `skipBackward-keybinds.lua` 脚本，将 `seek 10` 或 `seek -10` 中的 `10` 修改为你期望的秒数并保存即可（重启后生效）。
 
-
 ## 已知问题
-
 - **快进**：快进功能的 `右` 键快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipForward-keybinds.lua` 脚本，将 `RIGHT` 改为 `q` 或其他快捷键即可正常使用。
 - **快退**：快退功能的 `左` 键快捷键可能与 HTPC 的其他操作存在冲突，请用文本编辑/记事本打开 HTPC 的 `skipBackward-keybinds.lua` 脚本，将 `LEFT` 改为 `h` 或其他快捷键即可正常使用。
 - **倍速播放**：你可以通过 `g` 键开启或关闭全局播放速度模式（默认关闭，你也可以通过编辑 `speed-keybinds.lua` 脚本，设置 `local global_speed = true` 改为默认启用），在全局播放速度模式下，你设置的播放速度将对整个客户端生效，直到下次重启客户端为止，你也可以随时关闭该模式。
@@ -54,19 +47,21 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 - **切换音轨**：Plex 界面中的音轨选项不会发生变化，音轨切换仅在音频输出中生效，且仅对当次播放有效。默认显示 Plex 音轨标题，你也可以通过编辑 `cycleAudio-keybinds.lua` 脚本，设置 `local show_title = true` 改为默认显示内置音轨标题（若当前音轨没有内置音轨标题则会退回 Plex 音轨标题）。
 - **按键输入**：有部分音频文件的 `video-codec` 会被识别为 `mjpeg` 或 `png`，在播放这类音频文件时，所有脚本中自定义的快捷键都会在 Plex 全局生效，这将导致你无法使用这些按键在操作界面内输入字符（按键会触发相应的功能），此时你需要停止当前播放的音乐，才能正常使用所有按键输入字符。如果你认为这对你造成了影响，可以选择修改快捷键，使用一些不常用的按键作为快捷键（比如把快捷键修改为大写字母或特殊符号，通过 `Shift` 组合按键触发功能），这样可以降低脚本的不良的影响。
 
-
 ## 感谢
-
 感谢 [OttoKerner](https://forums.plex.tv/u/OttoKerner) 的启发，脚本 `stepping-keybinds.lua`、 `zoom-keybinds.lua` 和 `subPosition-keybinds.lua` 是复制了 OttoKerner [这篇文章](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1)中的代码进行修改得到的，感谢。
 
-　
+## 赞赏
+如果你觉得这个项目对你有用，可以请我喝杯咖啡。如果你喜欢这个项目，可以给我一个⭐️。谢谢你的支持！
+
+<img width="255" alt="赞赏" src="https://github.com/x1ao4/plex-localization-zh/assets/112841659/ced37486-9961-480e-8cb4-b34ca1b2eb5d">
+<br>
+<br>
+<br>
 
 # plex-mpv
 The player used by Plex desktop client is mpv player, some features of mpv player can be applied in Plex through the interface or shortcut keys, while some features do not have an interface or corresponding shortcuts in Plex. However, we can customize shortcut keys for these hidden features through scripts, so that we can use these features properly in Plex.
 
-
 ## Features
-
 01. **Fast Forward**: Press `right` to fast forward 10 seconds (customizable fast forward duration supported).
 02. **Rewind**: Press `left` to rewind 10 seconds (customizable rewind duration supported).
 03. **Multiply Speed Playback**: Press `.` to speed up, press `,` to slow down, press `/` to reset the playback speed, press `g` to turn the global playback speed mode on or off.
@@ -82,9 +77,7 @@ The player used by Plex desktop client is mpv player, some features of mpv playe
 13. **Zoom Screen**: Press `=` to zoom in, press `-` to zoom out, press `0` to reset the screen size.
 14. **Switch Audio Tracks**：Press `y` to cycle through the audio tracks, press `6` to toggle between displaying Embedded Audio Track Titles and Plex Display Titles.
 
-
 ## Installation
-
 Please put the script file into the user `scripts` folder of Plex and Plex HTPC, and then restart the Plex and Plex HTPC clients.
 
 MacOS users can refer to the following directory, please move the script files to the `scripts` folder, then use TextEdit to open `screenshot-keybinds.lua` to set the path to save the screenshot and save it; then use TextEdit to open `recordingBeta-keybinds.lua`, replace the `/Applications/FFmpeg/FFmpeg` in the script with the path of your FFmpeg executable (you need to install FFmpeg first), and set the directory to save the recording, then save the file.
@@ -98,14 +91,11 @@ D:\Users\Username\AppData\Local\Plex\scripts
 D:\Users\Username\AppData\Local\Plex HTPC\scripts
 ```
 ## Usage
-
 Except `recordingBeta-keybinds.lua` which only supports MacOS, all other scripts support Plex for Windows/Mac/Linux and Plex HTPC for Windows/Mac/Linux, please make sure to restart the client after installing the script before using it. If the script does not work properly, it might have conflicts with other shortcuts on your operating system, you could try to change the shortcut keys by opening the script with a TextEdit/Notepad.
 
 To customize the duration of **Fast Forward** or **Rewind**, open the `skipForward-keybinds.lua` or `skipBackward-keybinds.lua` script with a TextEdit/Notepad, and change the `10` in `seek 10` or `seek -10` to your desired number of seconds. Then, save the file (Changes will take effect after restarting).
 
-
 ## Known Issues
-
 - **Fast Forward**: The shortcut key for fast forward, `right` key, might conflict with other operations on your HTPC. To resolve this, open the `skipForward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `RIGHT` to `q` or any other shortcut key you prefer.
 - **Rewind**: The shortcut key for Rewind, `left` key, might conflict with other operations on your HTPC. To resolve this, open the `skipBackward-keybinds.lua` of the HTPC with a TextEdit/Notepad, and change `LEFT` to `h` or any other shortcut key you prefer.
 - **Multiply Speed Playback**: You can toggle the global playback speed mode on or off with the `g` key (By default, it's turned off, but you can also set `local global_speed = true` in the `speed-keybinds.lua` script to turn it on by default). In global playback speed mode, the speed you set will apply to the entire client until the next client restart, and you can turn off this mode at any time.
@@ -118,7 +108,10 @@ To customize the duration of **Fast Forward** or **Rewind**, open the `skipForwa
 - **Switch Audio Tracks**: The audio track option in the Plex interface will not change. Audio track switching only takes effect on the audio output and is only valid for the current playback. By default, Plex Display Titles are shown. You can also customize this by editing the `cycleAudio-keybinds.lua` script, setting `local show_title = true` to default to displaying embedded audio track titles (If the current audio track lacks an embedded audio track title, it will fallback to Plex Display Title).
 - **Keyboard Input**: For some audio files, the `video-codec` may be identified as `mjpeg` or `png`. When playing these audio files, all custom shortcuts in the script will take effect globally in Plex. This prevents you from using these keys to input characters within the user interface (the keys trigger corresponding functions). To resolve this, you need to stop the currently playing music to enable normal use of all keys for character input. If you find this affecting you, you can choose to modify the shortcuts by using less commonly used keys (such as changing the shortcut to uppercase letters or special symbols, triggering functions through `Shift` key combinations). This can mitigate the adverse effects of the script.
 
-
 ## Thanks
-
 Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration, the scripts `stepping-keybinds.lua`, `zoom-keybinds.lua` and `subPosition-keybinds.lua` were obtained by modifying the code in OttoKerner’s [article](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1). Thank you.
+
+## Support
+If you found this helpful, consider buying me a coffee or giving it a ⭐️. Thanks for your support!
+
+<img width="255" alt="赞赏" src="https://github.com/x1ao4/plex-localization-zh/assets/112841659/ced37486-9961-480e-8cb4-b34ca1b2eb5d">
