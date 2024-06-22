@@ -1,4 +1,6 @@
-# plex-mpv
+# MPV Integration for Plex <a name="mpv-integration-for-plex-zh"></a>
+<a href="#mpv-integration-for-plex-en">Switch to English</a>
+
 Plex 桌面端使用的播放器是 mpv 播放器，mpv 播放器的部分功能可以通过操作界面或快捷键在 Plex 中使用，还有一部分功能在 Plex 中没有操作界面，也没有相应的快捷键，但是我们通过脚本可以为这些隐藏功能自定义快捷键，这样就可以在 Plex 中正常使用这些功能了。
 
 ## 功能介绍
@@ -53,12 +55,16 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 ## 赞赏
 如果你觉得这个项目对你有用，可以请我喝杯咖啡。如果你喜欢这个项目，可以给我一个⭐️。谢谢你的支持！
 
-<img width="399" alt="赞赏" src="https://github.com/x1ao4/plex-mpv/assets/112841659/2eed25d0-d98f-4ffd-962e-aefec171b458">
+<img width="399" alt="赞赏" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/5a2e5133-1c29-4dbe-81a1-12a0130f18dc">
+<br><br>
+<a href="#mpv-integration-for-plex-zh">回到顶部</a>
 <br>
 <br>
 <br>
 
-# plex-mpv
+# MPV Integration for Plex <a name="mpv-integration-for-plex-en"></a>
+<a href="#mpv-integration-for-plex-zh">切换至中文</a>
+
 The player used by Plex desktop client is mpv player, some features of mpv player can be applied in Plex through the interface or shortcut keys, while some features do not have an interface or corresponding shortcuts in Plex. However, we can customize shortcut keys for these hidden features through scripts, so that we can use these features properly in Plex.
 
 ## Features
@@ -114,4 +120,6 @@ Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration,
 ## Support
 If you found this helpful, consider buying me a coffee or giving it a ⭐️. Thanks for your support!
 
-<img width="399" alt="赞赏" src="https://github.com/x1ao4/plex-mpv/assets/112841659/2eed25d0-d98f-4ffd-962e-aefec171b458">
+<img width="399" alt="Support" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/5a2e5133-1c29-4dbe-81a1-12a0130f18dc">
+<br><br>
+<a href="#mpv-integration-for-plex-en">Back to Top</a>
