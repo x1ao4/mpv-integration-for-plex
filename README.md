@@ -55,7 +55,7 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 ## 赞赏
 如果你觉得这个项目对你有用，可以请我喝杯咖啡。如果你喜欢这个项目，可以给我一个⭐️。谢谢你的支持！
 
-<img width="399" alt="赞赏" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/5a2e5133-1c29-4dbe-81a1-12a0130f18dc">
+<img width="399" alt="赞赏" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/99d9344f-5985-47c3-9d1d-6daa2912423b">
 <br><br>
 <a href="#mpv-integration-for-plex-zh">回到顶部</a>
 <br>
@@ -120,6 +120,6 @@ Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration,
 ## Support
 If you found this helpful, consider buying me a coffee or giving it a ⭐️. Thanks for your support!
 
-<img width="399" alt="Support" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/5a2e5133-1c29-4dbe-81a1-12a0130f18dc">
+<img width="399" alt="Support" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/99d9344f-5985-47c3-9d1d-6daa2912423b">
 <br><br>
 <a href="#mpv-integration-for-plex-en">Back to Top</a>
