@@ -53,9 +53,9 @@ D:\Users\用户名\AppData\Local\Plex HTPC\scripts
 感谢 [OttoKerner](https://forums.plex.tv/u/OttoKerner) 的启发，脚本 `stepping-keybinds.lua`、 `zoom-keybinds.lua` 和 `subPosition-keybinds.lua` 是复制了 OttoKerner [这篇文章](https://forums.plex.tv/t/use-mpv-features-which-are-not-exposed-in-plex-for-windows-mac-linux-and-plex-htpc/830025/1)中的代码进行修改得到的，感谢。
 
 ## 赞赏
-如果你觉得这个项目对你有用，可以请我喝杯咖啡。如果你喜欢这个项目，可以给我一个⭐️。谢谢你的支持！
+如果你觉得这个项目对你有用，可以考虑请我喝杯咖啡或者给我一个⭐️。谢谢你的支持！
 
-<img width="399" alt="赞赏" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/99d9344f-5985-47c3-9d1d-6daa2912423b">
+<img width="383" alt="赞赏" src="https://github.com/user-attachments/assets/bdd2226b-6282-439d-be92-5311b6e9d29c">
 <br><br>
 <a href="#mpv-integration-for-plex-zh">回到顶部</a>
 <br>
@@ -120,6 +120,6 @@ Thanks to [OttoKerner](https://forums.plex.tv/u/OttoKerner) for the inspiration,
 ## Support
 If you found this helpful, consider buying me a coffee or giving it a ⭐️. Thanks for your support!
 
-<img width="399" alt="Support" src="https://github.com/x1ao4/mpv-integration-for-plex/assets/112841659/99d9344f-5985-47c3-9d1d-6daa2912423b">
+<img width="383" alt="Support" src="https://github.com/user-attachments/assets/bdd2226b-6282-439d-be92-5311b6e9d29c">
 <br><br>
 <a href="#mpv-integration-for-plex-en">Back to Top</a>
